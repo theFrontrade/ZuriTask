@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose&display=swap");
+body {
+  font-family: "Red Rose", cursive;
+}
+.header-wrap {
+  width: 85%;
+  padding: 20px 7.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-sub-wrap {
+  display: inline;
+}
+.header-sub-wrap img {
+  width: 250px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.link-list {
+  list-style: none;
+  font-size: 20px;
+  display: inline;
+  padding: 0 10px;
+  color: #434343;
+}
+.header-button {
+  width: 170px;
+  height: 48px;
+  border: none;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  color: #ffffff;
+  border-radius: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.main-sub-wrap {
+  width: 85%;
+  padding: 10vh 7.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-sub1-container {
+  width: 57%;
+}
+.main-sub1-container-2 {
+  width: 35%;
+}
+.main-head-p {
+  font-size: 56px;
+  font-weight: 400;
+  color: #434343;
+}
+.main-head-p span {
+  color: #a02279;
+}
+.main-container-span {
+  font-size: 23px;
+  color: #434343;
+  line-height: 30px;
+}
+.main-search-wrap {
+  width: 90%;
+  padding: 30px 0;
+}
+.main-search-wrap input {
+  width: 60%;
+  height: 44px;
+  padding: 5px 2%;
+  border: 0.5px solid #a3a3a3;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+.main-search-wrap button {
+  width: 40%;
+  height: 44px;
+  background-color: #a02279;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: #ffffff;
+  font-size: 16px;
+}
+.main-wrap-last-container {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+width: 80%;
+padding: 10px 10%;
+display: flex;
+align-items: center;
+justify-content: space-between
+}
+
+/* houses-container */
+.inspired-text{
+    font-size: 48px;
+font-weight: 700;
+text-align: center;
+color: #434343;
+line-height: 60px;
+}
+.houses-wrap {
+  width: 85%;
+  padding: 0 7.5% 10vh 7.5%;
+}
+.houses-container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.house-container-sub-wrap {
+  width: 20.5%;
+  height: 300px;
+  padding: 1%;
+    margin:  1%;
+  border: 0.5px solid #d7d7d7;
+  border-radius: 8px;
+}
+.house-container-sub-wrap img {
+  width: 100%;
+}
+.house-container-sub-wrap p {
+  line-height: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.houses-first-span {
+  font-size: 11px;
+}
+.houses-second-span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* container 2  */
+.container2-wrap{
+width: 80%;
+height: 95vh;
+padding: 2.5vh 10%;
+background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.container2-text-wrap{
+width: 40%;
+height: 50vh;
+}
+.container2-text-wrap p {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 59px;
+}
+.container2-text-wrap span{
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.container2-text-wrap button {
+  display: block;
+width: 156px;
+height: 48px;
+border:  none;
+margin: 20px 0;
+border-radius: 5px;
+color: #A02279;
+}
+.container2-img-wrap{
+width: 50%;
+}
+.container2-img-wrap img{
+  width: 100%;
+}
+
+
+
+/* footer wrap  */
+.footer-wrap{
+  width: 80%;
+  height: 40vh;
+  background-color: #1D1D1E;
+  padding:7vh 10%;
+  display:  flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+.footer-img-wrap{
+  width: 30%;
+  display: block;
+}
+.footer-link-wrap{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+.footer-link-wrap span{
+  display:  block;
+  font-size: 14px;
+  line-height: 35px;
+}
