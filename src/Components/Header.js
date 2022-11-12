@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom'
 import WalletConnect from "./walletConnect";
 
 const Header = () => {
@@ -23,13 +24,13 @@ const Header = () => {
           <img src='/img/group.png' alt='img' />
         </div>
         <div>
-          <ul>
+          
             {headerLink.map((item) => (
-              <li className='link-list' key={item.key}>
+              <Link to={item.link} className='link-list' key={item.key}>
                 {item.name}
-              </li>
+              </Link>
             ))}
-          </ul>
+          
         </div>
         <button className='header-button' onClick={handleWalletClick}>
           Connect Wallet
@@ -44,12 +45,12 @@ export const headerLink = [
   {
     key: 1,
     name: "Home",
-    link: "",
+    link: "/",
   },
   {
     key: 2,
     name: "Place to stay",
-    link: "",
+    link: "/placetostay",
   },
   {
     key: 3,
