@@ -1,5 +1,5 @@
 import React from "react";
-import Inspiration from "../Inspiration";
+import Inspiration from "./placeToStay";
 const Home = () => {
   return (
     <div>

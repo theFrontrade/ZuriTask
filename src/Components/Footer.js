@@ -1,10 +1,18 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Footer = () => {
   return (
     <div className='footer-wrap'>
       <div>
         <img src='/img/footer-logo.svg' alt='img' />
-        <p>2022 Metabnb</p>
+        <div className='footer-icon-wrap'>
+          <FontAwesomeIcon icon={["fab", "facebook"]} />
+          <FontAwesomeIcon icon={['fab', 'instagram']} />
+          <FontAwesomeIcon icon={['fab', 'twitter']} />
+        </div>
+        <p>
+          <FontAwesomeIcon icon='copyright' />
+           <span> 2022 Metabnb</span></p>
       </div>
       <div className='footer-link-wrap'>
         <div>
@@ -28,6 +36,7 @@ const Footer = () => {
           <span>Career</span>
           <span>Contact us</span>
         </div>
+        
       </div>
     </div>
   );

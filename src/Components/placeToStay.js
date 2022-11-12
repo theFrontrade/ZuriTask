@@ -1,12 +1,12 @@
 
 import React from 'react'
- const Inspiration = () =>{
+ const PlacesTOStay = () =>{
      return (
          <div className='houses-wrap'>
              <p className='inspired-text'>Inspiration for your next adventure</p>
              <div className='houses-container-wrap'>
                  {
-                     inspireList.map((item)=><div className='house-container-sub-wrap' key={item.key}>
+                     PlacesList.slice(0, 8).map((item)=><div className='house-container-sub-wrap' key={item.key}>
                          <div>
                         <img src={item.src} alt='img'/>
                      </div>
@@ -18,8 +18,8 @@ import React from 'react'
          </div>
      )
  }
- export default Inspiration
- export const inspireList = [
+ export default PlacesTOStay
+ export const PlacesList = [
      {
          key : 1,
          name : 'Desert King',
@@ -84,4 +84,69 @@ import React from 'react'
         distance : '2345km',
         availability : '2 weeks'
     },
+    {
+        key : 9,
+        name : 'Desert King',
+        src : '/img/house9.png',
+        price : '1MBT',
+        distance : '2345km',
+        availability : '2 weeks'
+    },
+    {
+        key : 10,
+        name : 'Desert King',
+        src : '/img/house10.png',
+        price : '1MBT',
+        distance : '2345km',
+        availability : '2 weeks'
+    },
+    {
+        key : 11,
+        name : 'Desert King',
+        src : '/img/house11.png',
+        price : '1MBT',
+        distance : '2345km',
+        availability : '2 weeks'
+    },
+    {
+        key : 12,
+        name : 'Desert King',
+        src : '/img/house12.png',
+        price : '1MBT',
+        distance : '2345km',
+        availability : '2 weeks'
+    },
+    {
+        key : 13,
+        name : 'Desert King',
+        src : '/img/house13.png',
+        price : '1MBT',
+        distance : '2345km',
+        availability : '2 weeks'
+    },
+    {
+        key : 14,
+        name : 'Desert King',
+        src : '/img/house14.png',
+        price : '1MBT',
+        distance : '2345km',
+        availability : '2 weeks'
+    },
+    {
+        key : 15,
+        name : 'Desert King',
+        src : '/img/house15.png',
+        price : '1MBT',
+        distance : '2345km',
+        availability : '2 weeks'
+    },
+    {
+        key : 16,
+        name : 'Desert King',
+        src : '/img/house16.png',
+        price : '1MBT',
+        distance : '2345km',
+        availability : '2 weeks'
+    },
+    
  ]
