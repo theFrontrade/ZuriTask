@@ -1,5 +1,5 @@
 import React from "react";
-import '../Style/main.css'
+import "../Style/main.css";
 import Inspiration from "./placeToStay";
 const Home = () => {
   return (
@@ -51,10 +51,14 @@ export const Logos = () => {
 export const Container2 = () => {
   return (
     <div className='container2-wrap'>
-      <div className='container2-text-wrap'> 
+      <div className='container2-text-wrap'>
         <p>Metabnb NFTs</p>
-        <span>Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</span>
-      <button>Learn More</button>
+        <span>
+          Discover our NFT gift cards collection. Loyal customers gets amazing
+          gift cards which are traded as NFTs. These NFTs gives our cutomer
+          access to loads of our exclusive services.
+        </span>
+        <button>Learn More</button>
       </div>
       <div className='container2-img-wrap'>
         <img src='/img/frame 59546.png' alt='img' />

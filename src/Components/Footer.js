@@ -1,17 +1,16 @@
 import React from "react";
-import '../Style/footer.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "../Style/footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Footer = () => {
   return (
     <div className='footer-wrap'>
-      <div className="footer-logo-wrap">
+      <div className='footer-logo-wrap'>
         <img src='/img/footer-logo.svg' alt='img' />
         <div className='footer-icon-wrap'>
           <FontAwesomeIcon icon={["fab", "facebook"]} />
-          <FontAwesomeIcon icon={['fab', 'instagram']} />
-          <FontAwesomeIcon icon={['fab', 'twitter']} />
+          <FontAwesomeIcon icon={["fab", "instagram"]} />
+          <FontAwesomeIcon icon={["fab", "twitter"]} />
         </div>
-
       </div>
       <div className='footer-link-wrap'>
         <div>
@@ -35,11 +34,11 @@ const Footer = () => {
           <span>Career</span>
           <span>Contact us</span>
         </div>
-        
       </div>
-      <p>
-          <FontAwesomeIcon icon='copyright' />
-           <span> 2022 Metabnb</span></p>
+      <p style={{ width: "100%" }}>
+        <FontAwesomeIcon icon='copyright' />
+        <span> 2022 Metabnb</span>
+      </p>
     </div>
   );
 };

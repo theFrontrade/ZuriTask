@@ -1,17 +1,24 @@
 import React from "react";
-import '../Style/wallet.css'
+import "../Style/wallet.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-const walletConnect = ({cancelWallet, handleCancelIcon}) => {
-    const cancelWalletStyle = {
-        visibility : 'visible'
-    }
-   
+const walletConnect = ({ cancelWallet, handleCancelIcon }) => {
+  const cancelWalletStyle = {
+    visibility: "visible",
+  };
+
   return (
-    <div style={cancelWallet ? cancelWalletStyle : null} className='wallet-connect'>
+    <div
+      style={cancelWallet ? cancelWalletStyle : null}
+      className='wallet-connect'
+    >
       <div className='walletConnect-wrap'>
         <div className='walletConnect-header'>
           <p>Connect Wallet</p>
-          <FontAwesomeIcon icon='times' className='cancel-wallet-connect' onClick={handleCancelIcon} />
+          <FontAwesomeIcon
+            icon='times'
+            className='cancel-wallet-connect'
+            onClick={handleCancelIcon}
+          />
         </div>
         <div style={{ padding: "20px" }}>
           <p>Choose your Preferred Wallet</p>

@@ -19,19 +19,19 @@ export const PlaceCategories = () => {
   return (
     <div>
       <ul className='categories-ul'>
-      <li>Restaurant</li>
-      <li>Cottage</li>
-      <li>Castle</li>
-      <li>Fantastic City</li>
-      <li>Beach</li>
-      <li>Carbins</li>
-      <li>Off-grid</li>
-      <li>Farm</li>
-        <div className='location-button'>Location
+        <li>Restaurant</li>
+        <li>Cottage</li>
+        <li>Castle</li>
+        <li>Fantastic City</li>
+        <li>Beach</li>
+        <li>Carbins</li>
+        <li>Off-grid</li>
+        <li>Farm</li>
+        <div className='location-button'>
+          Location
           <FontAwesomeIcon className='sliders-h' icon='sliders-h' />
         </div>
       </ul>
-
     </div>
   );
 };
@@ -55,15 +55,24 @@ export const HouseList = () => {
                 available for {item.availability} stay
               </span>
             </p>
-            <span><FontAwesomeIcon className='house-rating' icon='star'/></span>
-                     <span><FontAwesomeIcon className='house-rating' icon='star'/></span>
-                     <span><FontAwesomeIcon className='house-rating' icon='star'/></span>
-                     <span><FontAwesomeIcon className='house-rating' icon='star'/></span>
-                     <span><FontAwesomeIcon className='house-rating' icon='star'/></span>
+            <span>
+              <FontAwesomeIcon className='house-rating' icon='star' />
+            </span>
+            <span>
+              <FontAwesomeIcon className='house-rating' icon='star' />
+            </span>
+            <span>
+              <FontAwesomeIcon className='house-rating' icon='star' />
+            </span>
+            <span>
+              <FontAwesomeIcon className='house-rating' icon='star' />
+            </span>
+            <span>
+              <FontAwesomeIcon className='house-rating' icon='star' />
+            </span>
           </div>
         ))}
       </div>
     </div>
   );
 };
-
