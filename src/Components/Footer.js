@@ -4,22 +4,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Footer = () => {
   return (
     <div className='footer-wrap'>
-      <div>
+      <div className="footer-logo-wrap">
         <img src='/img/footer-logo.svg' alt='img' />
         <div className='footer-icon-wrap'>
           <FontAwesomeIcon icon={["fab", "facebook"]} />
           <FontAwesomeIcon icon={['fab', 'instagram']} />
           <FontAwesomeIcon icon={['fab', 'twitter']} />
         </div>
-        <p>
-          <FontAwesomeIcon icon='copyright' />
-           <span> 2022 Metabnb</span></p>
+
       </div>
       <div className='footer-link-wrap'>
         <div>
           <p>Community</p>
           <span>NFT</span>
-          <span>Tokers</span>
+          <span>Tokens</span>
           <span>Landlord</span>
           <span>Discord</span>
         </div>
@@ -39,6 +37,9 @@ const Footer = () => {
         </div>
         
       </div>
+      <p>
+          <FontAwesomeIcon icon='copyright' />
+           <span> 2022 Metabnb</span></p>
     </div>
   );
 };

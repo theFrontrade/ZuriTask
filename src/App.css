@@ -15,17 +15,18 @@ button, input, textarea {
   font-family:  "Red Rose", cursive;
 }
 .categories-ul {
-  width: 100%;
-  padding: 0;
+  width: 90%;
+  padding: 0 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .categories-ul li {
   list-style: none;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 24px;
   color: #434343;
+  cursor: pointer;
 }
 .location-button {
   width: auto;
@@ -36,7 +37,9 @@ button, input, textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 100;
+  cursor: pointer;
   font-family: "Red Rose", cursive;
 }
 .sliders-h {

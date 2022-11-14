@@ -19,11 +19,8 @@ const mobileNavStyle = {
 }
  
   return (
-    <div>
-      <WalletConnect
-        cancelWallet={cancelWallet}
-        handleCancelIcon={handleCancelIcon}
-      />
+    <div className="nav-wrap">
+      
       <nav>
         <div className='header-wrap'>
           <FontAwesomeIcon icon='bars' onClick={() => setMobileNav(true)} className='mobile-bars' />
@@ -44,6 +41,10 @@ const mobileNavStyle = {
           </button>
         </div>
       </nav>
+      <WalletConnect
+        cancelWallet={cancelWallet}
+        handleCancelIcon={handleCancelIcon}
+      />
     </div>
   );
 };

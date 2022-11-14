@@ -14,9 +14,9 @@
     display: block;
   }
   .footer-icon-wrap {
-    width: 70%;
+    width: 40%;
     display: flex;
-    padding: 40px 0;
+    padding: 30px 0;
     justify-content: space-between;
   }
   .footer-link-wrap {
@@ -39,7 +39,11 @@
   @media only screen and (max-width: 750px) {
     .footer-wrap{
       height: auto;
+      align-items: flex-start;
       justify-content: space-between;
+    }
+    .footer-logo-wrap{
+      padding: 20px 0 0 0;
     }
     .footer-link-wrap{
       width: 100%;
@@ -47,7 +51,7 @@
     }
     .footer-link-wrap div{
       width: 40%;
-      padding: 10px 0;
+      padding: 20px 0;
     }
     .footer-link-wrap p{
       font-size: 20px;

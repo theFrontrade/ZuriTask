@@ -5,7 +5,7 @@ import Footer from './Footer'
 
  const Home = () =>{
      return (
-         <div>
+         <div style={{margin:0, padding:0}}>
              <Header />
              <Main />
              <Footer />

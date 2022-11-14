@@ -16,9 +16,10 @@
     justify-content: space-between;
   }
   .house-container-sub-wrap {
-    width: 22%;
+    width: 21%;
     height: auto;
-    padding: 1%;
+    padding:  1%;
+    margin: 10px 0;
     border: 0.5px solid #d7d7d7;
     border-radius: 8px;
     
