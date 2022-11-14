@@ -42,9 +42,10 @@ export const Container1 = () => {
 export const Logos = () => {
   return (
     <div className='main-wrap-last-container'>
-      <img src='/img/frame 4041.svg' alt='img' />
-      <img src='/img/group 4040.svg' alt='img' />
       <img src='/img/group 59537.svg' alt='img' />
+      <img src='/img/group 4040.svg' alt='img' />
+
+      <img src='/img/frame 4041.svg' alt='img' />
     </div>
   );
 };
