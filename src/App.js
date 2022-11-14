@@ -4,21 +4,21 @@ import Home from './Components/Home'
 import Houses from "./Components/Houses";
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faAngleRight, faCheckSquare, faCoffee, faCopyright, faLaptop, faSlidersH, faStar, faTimes,} from '@fortawesome/free-solid-svg-icons'
+import { faAngleRight, faBars, faCheckSquare, faCoffee, faCopyright, faLaptop, faSlidersH, faStar, faTimes, } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faLaptop, faCheckSquare, faCoffee, faAngleRight,faTimes, fab, faCopyright, faSlidersH, faStar )
-  
+library.add(faLaptop, faBars, faCheckSquare, faCoffee, faAngleRight, faTimes, fab, faCopyright, faSlidersH, faStar)
+
 
 
 
 const App = () => {
- 
+
 
   return (
     <Router>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/placetostay' element={< Houses/>} />
+        <Route path='/placetostay' element={< Houses />} />
       </Routes>
     </Router>
   );

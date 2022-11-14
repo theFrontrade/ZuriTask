@@ -14,6 +14,10 @@ import'../Style/places.css'
                      <p><span className='houses-first-span'>{item.name}</span><span className='houses-second-span'>{item.price} per night</span></p>
                      <p><span className='houses-first-span'>{item.distance} away</span> <span className='houses-first-span'>available for {item.availability} stay</span></p>
                      <span><FontAwesomeIcon className='house-rating' icon='star'/></span>
+                     <span><FontAwesomeIcon className='house-rating' icon='star'/></span>
+                     <span><FontAwesomeIcon className='house-rating' icon='star'/></span>
+                     <span><FontAwesomeIcon className='house-rating' icon='star'/></span>
+                     <span><FontAwesomeIcon className='house-rating' icon='star'/></span>
                      </div>)
                  }
              </div>

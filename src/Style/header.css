@@ -1,6 +1,6 @@
 .header-wrap {
-    width: 85%;
-    padding: 40px 7.5% 60px 7.5%;
+    width: 90%;
+    padding: 40px 5% 60px 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,16 +9,24 @@
     display: inline;
   }
   .header-sub-wrap img {
-    width: 250px;
+    width: 200px;
     height: 50px;
     object-fit: contain;
   }
-  
+  .mobile-bars{
+    display: none;
+  }
+  .mobile-cancel-button{
+    display: none;
+    
+  }
+  .header-nav-link{
+    display: flex;
+  }
   
   .link-list {
     text-decoration: none;
-    font-size: 20px;
-    display: inline;
+    font-size: 17px;
     padding: 0 10px;
     color: #434343;
     cursor: pointer;
@@ -33,31 +41,73 @@
     font-size: 1rem;
     cursor: pointer;
   }
-  @media only screen and (max-width: 1024px) {
+
+  /* @media only screen and (max-width: 768px) {
     .header-wrap {
       width: 96%;
-      padding: 10px 2%;
+      padding: 10px 2%; 
     }
-  }
-  @media only screen and (max-width: 750px) {
-    .header-wrap {
-      width: 100%;
-      background: rgba(64, 64, 64, 0.959);
+    .header-sub-wrap img{
+      width: 110px;
+    }
+    .link-list{
+      display: inline;
+      padding: 5px;
+      font-size: 100%
+    }
+    .header-button{
+      width: 150px;
+      height: 40px;
       padding: 0;
-      margin: 0;
-      top: 50px;
+font-size: 10px;
+    }
+  } */
+  @media only screen and (max-width: 768px) {
+    .header-wrap {
+      width: 90%;
+      padding: 10px 5%;
+    }
+    .header-nav-link {
+      width: 95%;
+      height: 80vh;
+      background: rgb(64, 64, 64);
+      padding: 0;
+      margin: 0 2.5%;
+      top: 80px;
       left: 0;
-      inset: 0 0 0 30%;
+      border-radius: 4px;
       overflow: hidden;
       position: fixed;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
       display: none;
+      
     }
+    .mobile-bars{
+      display: block;
+    }
+    .mobile-cancel-button{
+      display:  block;
+    }
+.header-sub-wrap img{
+  width: 120px;
+}
+.header-button{
+  width: 90px;
+  height: 40px;
+  font-size: 10px;
+}
     .link-list {
         display: block;
-        padding: 20px 0;
+        padding: 20px 20px;
         color: #ffffff;
       } 
+      .mobile-cancel-button{
+        font-size: 20px;
+        color: #a02279;
+        padding: 20px;
+        float: right;
+      }
   }  
+  

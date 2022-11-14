@@ -7,13 +7,16 @@ body {
 #root{
   margin: 0;
   padding: 0;
+  
 }
 /* header */
 
-
+button, input, textarea {
+  font-family:  "Red Rose", cursive;
+}
 .categories-ul {
-  width: 80%;
-  padding: 0 10%;
+  width: 100%;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,10 +44,14 @@ body {
   padding: 0 5px;
   font-weight: 100;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .categories-ul {
-    width: 95%;
-    padding: 0 2.5%;
+    width: 100%;
+    padding: 10px 0;
     flex-wrap: wrap;
+  }
+  .categories-ul li{
+    margin: 0 15px;
+line-height: 40px;
   }
 }

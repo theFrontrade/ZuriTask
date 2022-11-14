@@ -1,16 +1,23 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import '../Style/header.css'
 import WalletConnect from "./walletConnect";
 
 const Header = () => {
+  const [mobileNav, setMobileNav] = useState(false)
   const [cancelWallet, SetCancelWallet] = useState(false);
   const handleWalletClick = () => {
+    setMobileNav(false)
     SetCancelWallet(true);
   };
   const handleCancelIcon = () => {
     SetCancelWallet(false);
   };
+const mobileNavStyle = {
+  display : 'block'
+}
+ 
   return (
     <div>
       <WalletConnect
@@ -19,12 +26,15 @@ const Header = () => {
       />
       <nav>
         <div className='header-wrap'>
+          <FontAwesomeIcon icon='bars' onClick={() => setMobileNav(true)} className='mobile-bars' />
           <div className='header-sub-wrap'>
+
             <img src='/img/group.png' alt='img' />
           </div>
-          <div className="header-nav-link">
+          <div style={mobileNav? mobileNavStyle : null} className="header-nav-link">
+            <FontAwesomeIcon icon='times' className="mobile-cancel-button" onClick={()=>setMobileNav(false)} />
             {headerLink.map((item) => (
-              <Link to={item.link} className='link-list' key={item.key}>
+              <Link to={item.link} onClick={()=>setMobileNav(false)} className='link-list' key={item.key}>
                 {item.name}
               </Link>
             ))}
