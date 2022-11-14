@@ -1,5 +1,6 @@
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import'../Style/places.css'
  const PlacesTOStay = () =>{
      return (
          <div className='houses-wrap'>
@@ -12,6 +13,7 @@ import React from 'react'
                      </div>
                      <p><span className='houses-first-span'>{item.name}</span><span className='houses-second-span'>{item.price} per night</span></p>
                      <p><span className='houses-first-span'>{item.distance} away</span> <span className='houses-first-span'>available for {item.availability} stay</span></p>
+                     <span><FontAwesomeIcon className='house-rating' icon='star'/></span>
                      </div>)
                  }
              </div>
@@ -26,7 +28,8 @@ import React from 'react'
          src : '/img/house1.png',
          price : '1MBT',
          distance : '2345km',
-         availability : '2 weeks'
+         availability : '2 weeks',
+         stars : 5
      },
      {
         key : 2,

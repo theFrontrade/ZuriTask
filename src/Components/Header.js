@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+import '../Style/header.css'
 import WalletConnect from "./walletConnect";
 
 const Header = () => {
@@ -12,30 +13,26 @@ const Header = () => {
   };
   return (
     <div>
-        <WalletConnect
-          cancelWallet={cancelWallet}
-          handleCancelIcon={handleCancelIcon}
-        />
-    <nav >
-
-      <div className='header-wrap'>
-        
-        <div className='header-sub-wrap'>
-          <img src='/img/group.png' alt='img' />
-        </div>
-        <div>
-          
+      <WalletConnect
+        cancelWallet={cancelWallet}
+        handleCancelIcon={handleCancelIcon}
+      />
+      <nav>
+        <div className='header-wrap'>
+          <div className='header-sub-wrap'>
+            <img src='/img/group.png' alt='img' />
+          </div>
+          <div className="header-nav-link">
             {headerLink.map((item) => (
               <Link to={item.link} className='link-list' key={item.key}>
                 {item.name}
               </Link>
             ))}
-          
+          </div>
+          <button className='header-button' onClick={handleWalletClick}>
+            Connect Wallet
+          </button>
         </div>
-        <button className='header-button' onClick={handleWalletClick}>
-          Connect Wallet
-        </button>
-      </div>
       </nav>
     </div>
   );

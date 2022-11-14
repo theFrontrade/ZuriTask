@@ -4,9 +4,9 @@ import Home from './Components/Home'
 import Houses from "./Components/Houses";
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faAngleRight, faCheckSquare, faCoffee, faCopyright, faLaptop, faSlidersH, faTimes,} from '@fortawesome/free-solid-svg-icons'
+import { faAngleRight, faCheckSquare, faCoffee, faCopyright, faLaptop, faSlidersH, faStar, faTimes,} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faLaptop, faCheckSquare, faCoffee, faAngleRight,faTimes, fab, faCopyright, faSlidersH )
+library.add(faLaptop, faCheckSquare, faCoffee, faAngleRight,faTimes, fab, faCopyright, faSlidersH, faStar )
   
 
 

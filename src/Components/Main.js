@@ -1,4 +1,5 @@
 import React from "react";
+import '../Style/main.css'
 import Inspiration from "./placeToStay";
 const Home = () => {
   return (

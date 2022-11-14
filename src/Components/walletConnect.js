@@ -1,4 +1,5 @@
 import React from "react";
+import '../Style/wallet.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const walletConnect = ({cancelWallet, handleCancelIcon}) => {
     const cancelWalletStyle = {

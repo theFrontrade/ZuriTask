@@ -1,0 +1,57 @@
+/* walletConnect */
+.wallet-connect {
+    width: 100%;
+    height: 100vh;
+    background: rgba(64, 64, 64, 0.3);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+  .walletConnect-wrap {
+    width: 40%;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  .walletConnect-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.4px solid #434343;
+    padding: 0 20px;
+  }
+  .walletConnect-header p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .cancel-wallet-connect {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .wallet-button {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f9fa;
+    border: 1px solid #cfd8dc;
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+  }
+  .wallet-button span {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.68px;
+    padding-left: 15px;
+  }
+  .wallet-angle-icon {
+    float: right;
+  }
+  @media only screen and (max-width: 1024px) {
+    .walletConnect-wrap {
+      width: 60%;
+    }
+  }
+  
